@@ -1,0 +1,21 @@
+{
+  "platformName": "Android",
+  "automationName": "UiAutomator2",
+  "deviceName": "Pixel_5",
+  "avd": "Pixel_5",
+  "platformVersion": "12",
+  "app": "apps/android/mda-2.0.2-23.apk",
+  "appPackage": "com.saucelabs.mydemoapp.android",
+  "appActivity": "com.saucelabs.mydemoapp.android.view.activities.SplashActivity",
+  "appWaitActivity": "com.saucelabs.mydemoapp.android.view.activities.*",
+  "noReset": false,
+  "fullReset": false,
+  "appWaitForLaunch": true,
+  "unicodeKeyboard": true,
+  "resetKeyboard": true,
+  "newCommandTimeout": 120,
+  "uiautomator2ServerLaunchTimeout": 90000,
+  "adbExecTimeout": 60000,
+  "androidInstallTimeout": 90000,
+  "autoGrantPermissions": true
+}

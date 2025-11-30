@@ -1,0 +1,17 @@
+{
+  "platformName": "Android",
+  "appium:automationName": "UiAutomator2",
+  "appium:udid": "AABHCP5323401314",
+  "appium:deviceName": "Pixel_5",
+  "appium:platformVersion": "12",
+  "appium:app": "apps/android/mda-2.0.2-23.apk",
+  "appium:appPackage": "com.saucelabs.mydemoapp.android",
+  "appium:appActivity": "com.saucelabs.mydemoapp.android.view.activities.SplashActivity",
+  "appium:noReset": false,
+  "appium:fullReset": false,
+  "appium:autoGrantPermissions": true,
+  "appium:newCommandTimeout": 120,
+  "appium:uiautomator2ServerLaunchTimeout": 90000,
+  "appium:adbExecTimeout": 60000,
+  "appium:androidInstallTimeout": 120000
+}

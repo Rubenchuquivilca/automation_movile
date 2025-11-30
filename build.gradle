@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.3.2")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    implementation 'net.serenity-bdd:serenity-core:2.3.2'
+    implementation 'net.serenity-bdd:serenity-junit:2.3.2'
+    implementation 'net.serenity-bdd:serenity-screenplay:2.3.2'
+    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:2.3.2'
+    testImplementation 'org.assertj:assertj-core:3.25.3' // Usa la última versión estable
+    testImplementation('junit:junit:4.12')
+}
+gradle.startParameter.continueOnFailure = true
+
+
+
+
+//plugins {
+  //  alias(libs.plugins.android.application) apply false
+   // alias(libs.plugins.kotlin.android) apply false
+    //alias(libs.plugins.kotlin.compose) apply false
+//}
